@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+   
+    width: 100%;
+    align-items: center;
+}
+nav div{
+    
+    padding: 0 50px;
+}
+nav .last-div{
+margin-left: 10px;
+display: flex;
+align-items: center;
+font-size: 30px;
+gap: 0 10px;
+}
+nav .last-div a {
+color: black;
+}
+nav .last-div img{
+width: 250px;
+height: 140px;
+}
+nav .center-div{
+    display: flex;
+ align-items: center; 
+ gap: 0 10px;
+   
+}
+nav .center-div input {
+position: relative;
+width: 470px;
+padding: 15px  25px;
+border-radius: 50px;
+font-size: 16px;
+}
+
+nav .center-div i{
+    position: absolute;
+    padding-left: 8px;
+    
+}
+nav .center-div button{
+padding: 15px 33px ;
+background-color: orangered;
+color: white;
+border: none;
+font-size: 16px;
+}
+nav .right-div{
+    display: flex;
+  gap: 0 10px;
+ padding: 0 10px;
+ 
+}
+nav .right-div h6{
+    font-size: 22px;
+    
+}
+nav .right-div i{
+    font-size: 22px;   
+}
+nav .right-div :hover{
+    color: orangered;
+}
+.sec-1{
+width: 100%;
+
+}
+.sec-1 .leader-all{
+    width: 70%;
+    height: auto;
+   display: flex;
+}
+
+.sec-1 .leader-all .div-one{
+    width: 30%;
+}
+.sec-1 .leader-all .div-two{
+    width: 60%;
+ 
+}
+.sec-1 .leader-all .div-two div{
+margin: 20px 0;
+}
+.sec-1 .leader-all .div-two div button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    border: none; 
+    position: relative;
+}
+.sec-1 .leader-all .div-two div h1 .sen-1{
+   margin: 0 4px;
+   opacity: 0.5;
+}
+.sec-1 .leader-all .div-two div h1 .sen{
+    color: orangered;
+    font-size: 16px;
+   }
+ .icon .fa-star {
+color: gold;
+
+   }
+.sec-1 .div-three{
+    width: 30%;
+    background-color: orangered;
+    height: 30%;
+}

@@ -1,0 +1,412 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+   
+    width: 100%;
+    align-items: center;
+}
+nav div{
+    
+    padding: 0 50px;
+}
+nav .last-div{
+margin-left: 10px;
+display: flex;
+align-items: center;
+font-size: 30px;
+gap: 0 10px;
+}
+nav .last-div a {
+color: black;
+}
+nav .last-div img{
+width: 250px;
+height: 140px;
+}
+nav .center-div{
+    display: flex;
+ align-items: center; 
+ gap: 0 10px;
+   
+}
+nav .center-div input {
+position: relative;
+width: 470px;
+padding: 15px  25px;
+border-radius: 50px;
+font-size: 16px;
+}
+
+nav .center-div i{
+    position: absolute;
+    padding-left: 8px;
+    
+}
+nav .center-div button{
+padding: 15px 33px ;
+background-color: orangered;
+color: white;
+border: none;
+font-size: 16px;
+}
+nav .right-div{
+    display: flex;
+  gap: 0 10px;
+ padding: 0 10px;
+ 
+}
+nav .right-div h6{
+    font-size: 22px;
+    
+}
+nav .right-div i{
+    font-size: 22px;   
+}
+nav .right-div :hover{
+    color: orangered;
+
+    }
+/*--------end-nav--------*/
+
+
+/*--------------star-div-------------*/
+
+.lolo {
+    display: flex;
+}
+
+.name {
+    width: 200px;
+    margin-left: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: right;
+
+}
+
+.name2 {
+    width: 200px;
+    height: 270px;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: right;
+
+}
+
+/*---------slide-----*/
+.carouselslide {}
+
+/*--------end-slide-----*/
+
+/*---------start-img-----*/
+.text-center {
+    display: flex;
+}
+
+.gege {
+    width: 50%;
+    height: 50%;
+}
+
+/*---------end-img-----*/
+
+/*---------start-cards-----*/
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/*---------end-cards-----*/
+
+
+/*---------start-cards2-----*/
+.do {
+    background-color: #f7ac8a;
+    text-align: center;
+}
+
+.did {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.dodo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/*---------end-cards2-----*/
+
+/*---------start-cards3-----*/
+.card3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/*---------end-cards3-----*/
+
+/*---------start-cards4-----*/
+.caar {
+    text-align: end;
+
+}
+
+.card4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/*---------end-cards4-----*/
+.sasa {
+    background-color: #f7ac8a;
+    text-align: center;
+}
+
+/*---------start-cards5-----*/
+.card5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/*---------end-cards5-----*/
+
+/*---------start-cards7-----*/
+.win {
+    background-color: rgb(213, 171, 235);
+    text-align: center;
+}
+
+.card7 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/*---------end-cards7-----*/
+
+/*---------start-cards8-----*/
+.krkr {
+    text-align: end;
+}
+
+.card8 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards8-------*/
+
+/*---------start-cards9-----*/
+.winer {
+    background-color: #fbd0f4;
+    text-align: center;
+}
+
+.card9 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards9-------*/
+
+/*---------start-cards10-----*/
+.dimo {
+    text-align: end;
+}
+
+.card10 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards10-------*/
+
+/*---------start-cards11-----*/
+.water {
+    text-align: center;
+    background-color: #cee7f7;
+}
+
+.card11 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards11-------*/
+
+/*---------start-cards12-----*/
+.karkor {
+    text-align: end;
+}
+
+.card12 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards12-------*/
+
+/*---------start-cards13-----*/
+.nor {
+    text-align: center;
+    background-color: #f4bfa7;
+}
+
+.card13 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards13-------*/
+
+/*---------start-cards14-----*/
+.peto {
+    text-align: end;
+}
+
+.card14 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards14-------*/
+
+/*---------start-cards15-----*/
+.maro {
+    text-align: center;
+    background-color: #6da7fe;
+}
+
+.card15 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards15-------*/
+
+/*---------start-cards16-----*/
+.card16 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards16-------*/
+
+/*---------start-cards17-----*/
+.mrmr {
+    text-align: end;
+}
+
+.card17 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/*---------end-cards17-------*/
+
+.koky {
+    text-align: end;
+}

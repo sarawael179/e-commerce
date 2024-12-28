@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مركز المساعدة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<body>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            max-width: 100%;
+            direction: rtl;
+        }
+
+        .navbar {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            top: 0;
+            width: 100%;
+            padding: 10px 0;
+            z-index: 1000;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .navbar-center {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .navbar-right {
+            color: black;
+        }
+
+        .navbar-right :hover {
+            color: #f75d16;
+        }
+
+        .navbar-right .icon {
+            color: black;
+            text-decoration: none;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: 250px;
+        }
+
+        .search-button {
+            background-color: rgb(242, 120, 26);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .language-select {
+            padding: 5px;
+        }
+
+        .search-input {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        div a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+    /*--------end-nav--------*/
+    .kooky {
+      background-color: #f69365;
+    }
+
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      overflow-x: auto;
+      /* لتجنب مشاكل العرض على الشاشات الصغيرة */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: right;
+      /* محاذاة النص لليمين */
+    }
+
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+      /* تأثير التمرير */
+    }
+  </style>
+
+
+
+  <div class="red">
+    <img src="d:\Eng_Malk\team\desktopAR.png">
+  </div>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="d:\Eng_Malk\team\5947363922443093231.jpg" alt="JUMIA Logo" class="logo">
+      <select class="language-select">
+        <option value="ar">عربي</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    <div class="navbar-center">
+      <input type="text" class="search-input" placeholder="البحث عن منتجات, العلامات التجارية,والاقسام">
+    </div>
+    <div class="search-container">
+      <button class="search-button">بحث</button>
+
+    </div>
+
+    <div class="navbar-right">
+      <a href="#">
+        <span class="icon">
+          <a href="d:\Eng_Malk\team\login.jumia\login.jumia\index.html"><i class="fa-regular fa-user"><b>تسجيل
+                الدخول</b></i></a>
+        </span>
+      </a>
+      <a href="#">
+        <span class="icon">
+          <a href=""><i class="fa-regular fa-circle-question"></i><b>المساعدة</b></i></a>
+        </span>
+      </a>
+
+      <a href="#">
+        <span class="icon">
+          <a href=""><i class="fa-solid fa-cart-shopping"><b>سلة التسويق</b></i></a>
+        </span>
+      </a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="kooky">
+    <h4>مركز المساعدة</h4>
+    <h1>مرحباً، كيف يمكننا مساعدتك؟</h1>
+  </div>
+
+  <div>
+    <input type="text" class="search-input" placeholder="اكتب كلامات مثل 'الاسترجاع'">
+  </div>
+
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>+</th>
+          <th>الدفع</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>+</td>
+          <td>ما هي طرق الدفع المتاحة؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>هل معلومات الدفع الخاصة بي ستكون آمنة؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>لم أُكمل عملية الدفع الخاصة بي، ماذا أفعل؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>ما هو جومبا باي عند الاستلام؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>كيف يعمل جومبا باي عند الاستلام؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>واجهت مشكلة عند محاولة الدفع باستخدام جومبا باي عند الاستلام. ماذا يجب أن أفعل؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>لقد قمت بطلب عدة شحنات. هل يمكنني دفع ثمن جميع الشحنات دفعة واحدة باستخدام جومبا باي عند الاستلام؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>ماذا لو كان شخص آخر يستلم الشحنة نيابة عني؟ هل يمكن له الدفع باستخدام جومبا عند الاستلام؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>الدفع عند الاستلام غير متاح. لماذا؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>كيف يمكنني التأكد مما إذا تمت عملية الدفع بنجاح؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>كم تستغرق معاملة الدفع؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>هل يمكنني إلغاء طلبي واسترداد المبلغ بعد أن "تمت عملية الدفع"؟</td>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>حاولت دفع طلبي باستخدام بطاقتي / المحفظة الإلكترونية، تم خصم المبلغ من الحساب، ولكن يظهر أن الطلب لم يتم
+            إتمامه. ما الذي حدث، وكيف يمكنني استرداد أموالي؟</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+</body>
+
+</html>
