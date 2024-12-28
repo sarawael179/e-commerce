@@ -1,0 +1,488 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+    direction: rtl;
+}
+
+/* تصميم الهيدر */
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* النص في الصفحة */
+main {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* التصميم المتجاوب */
+@media (min-width: 1200px) {
+    body {
+        font-size: 22px;
+        /* تكبير النصوص للشاشات الكبيرة مثل التلفزيونات */
+    }
+
+    main {
+        max-width: 80%;
+        /* تحديد عرض المحتوى */
+        margin: 0 auto;
+        /* توسيطه في الشاشة */
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+        /* تقليل المسافات على الشاشات الصغيرة */
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 26px;
+        /* تكبير النصوص لشاشات التلفاز بدقة 4K */
+    }
+
+    main {
+        max-width: 70%;
+    }
+}
+
+.red {
+    background-color: rgb(229, 7, 7);
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;/*--الناف بار بيتحرك معايا--*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.navbar-right {
+    color: black;
+}
+
+.navbar-right :hover {
+    color: #f75d16;
+}
+
+.navbar-right .icon {
+    color: black;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.search-button {
+    background-color: rgb(242, 120, 26);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.language-select {
+    padding: 5px;
+}
+
+.search-input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/*--------end-nav--------*/
+
+/*-----star-div---*/
+div a {
+    text-decoration: none;
+    color: black;
+}
+.lolo {
+    display: flex;
+    word-break: break-all;
+    margin: 30px 30px;
+    text-decoration: none;
+}
+
+.name {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    font-size: small;
+    text-decoration: none;
+    color: black;
+}
+
+.name :hover {
+    color: #f75d16;
+}
+
+.has {
+    margin-right: 60px;
+}
+
+.name2 {
+    width: 220px;
+    height: 200px;
+    margin-right: auto;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    font-size: small;
+}
+
+.name2 :hover {
+    color: #f75d16;
+    cursor: pointer;
+}
+
+.name2 .ss {
+    color: black;
+    margin-right: 10px;
+}
+
+.srr {
+    margin-top: 40px;
+}
+
+/*---end-div---*/
+
+
+/*-------start-img-----*/
+.text-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.text-center img {
+    width: 100%;
+    height: auto;
+}
+
+/*---------end-img-----*/
+
+.dora {
+    margin-right: 20px;
+}
+
+/*---------start-card1-----*/
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/*---------end-card1-----*/
+
+
+/*---------start-cards2-----*/
+.do {
+    background-color: #f7ac8a;
+    text-align: center;
+}
+
+.did {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    cursor: pointer;
+}
+
+/*---------end-cards2-----*/
+
+/*---------start-cards3-----*/
+.card3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card3 img {
+    width: 100%;
+    height: auto;
+}
+
+.car3 {
+    text-align: center;
+}
+
+/*---------end-cards3-----*/
+
+/*---------start-cards4-----*/
+.card4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+
+}
+
+/*---------end-cards4-----*/
+.sasa {
+    background-color: #f7ac8a;
+    text-align: center;
+}
+
+/*---------start-cards5-----*/
+.card5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/*---------end-cards5-----*/
+
+/*---------start-cards7-----*/
+.win {
+    background-color: rgb(213, 171, 235);
+    text-align: center;
+}
+
+.card7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.card7 img {
+    width: 100%;
+    height: auto;
+}
+
+/*---------end-cards7-----*/
+
+/*---------start-cards8-----*/
+.card8 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.card8 img {
+    width: 100%;
+    height: auto;
+}
+
+/*---------end-cards8-------*/
+
+/*---------start-cards9-----*/
+.winer {
+    background-color: #fbd0f4;
+    text-align: center;
+}
+
+.card9 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.card9 img {
+    width: 100%;
+    height: auto;
+}
+
+/*---------end-cards9-------*/
+
+/*---------start-cards10-----*/
+.card10 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+
+}
+
+.card10 img {
+    width: 100%;
+    height: auto;
+}
+
+.card12 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+
+}
+
+.card12 img {
+    width: 100%;
+    height: auto;
+}
+
+.card14 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+
+}
+
+.card14 img {
+    width: 100%;
+    height: auto;
+}
+
+.card17 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+
+}
+
+.card17 img {
+    width: 100%;
+    height: auto;
+}
+
+.card3,
+.card16 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.card3,
+.card16 img {
+    width: 100%;
+    height: auto;
+}
+
+/*---------end-cards10-------*/
+
+/*---------start-cards11-----*/
+.water {
+    text-align: center;
+    background-color: #cee7f7;
+}
+
+.card11 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards11-------*/
+
+/*---------start-cards13-----*/
+.nor {
+    text-align: center;
+    background-color: #f4bfa7;
+}
+
+.card13 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards13-------*/
+
+/*---------start-cards15-----*/
+.maro {
+    text-align: center;
+    background-color: #6da7fe;
+}
+
+.card15 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*---------end-cards15-------*/
+
+footer {
+    display: flex;
+    padding: 20px;
+    background-color: #525050;
+    justify-content: center;
+    align-items: center;
+}
+
+.us {
+    color: #f0f0f0;
+}
+
+.follow .iconss {
+    padding-right: 30px;
+    font-size: 30px;
+    transition: color 0.2s;
+    color: #ffffff;
+}
+
+.iconss :hover {
+    color: #f16c2f;
+}
