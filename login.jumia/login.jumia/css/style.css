@@ -1,0 +1,94 @@
+/* إعادة تعيين بعض التنسيقات الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color:white ;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/html/pngtree-3d-render-nighttime-forest-summer-camp-with-majestic-mountain-backdrop-image_13569268.png);
+    background-repeat: no-repeat;
+    background-size: 100% 99%;
+  }
+  
+  .login-container {
+    background-color:rgb(0, 0, 0) ;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .input-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .input-field label {
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+    font-weight: bold;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-field input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: orangered;
+    color:black ;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: green;
+    transition: all 2s;
+  }
+  
+  .signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
