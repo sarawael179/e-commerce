@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* تحويل العناصر لعرض عمودي */
+    }
+}
+
+/* تحسين العرض للأجهزة الأكبر من 600px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+body {
+    font-family: "Parkinsans", sans-serif; /* الخط الذي تم ربطه في HTML */
+    font-weight: 400; /* الوزن */
+    margin: 0;
+padding: 0;
+
+}
+.parkinsans-uniquifier {
+    font-family: "Parkinsans", sans-serif; /* الخط الخاص */
+    font-weight: 600; /* الوزن */
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    background-color: black ;
+    padding: 10px 20px;
+    color: white;
+width: 100%;
+   
+    
+}
+.logo {
+    display: flex;
+    gap: 0 10px;
+}
+.logo i {
+    font-size: 40px; /* حجم الأيقونة */
+    color: #0084ff;
+}
+
+.search {
+    position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.search input {
+    padding: 10px 40px 10px 10px; /* توفير مساحة للأيقونة */
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    width:350px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.search i {
+    position: absolute;
+ right: 10px;
+    font-size: 16px;
+    color: #555;
+  
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+   margin: 0px 40px;
+    font-size: 22px ;
+    
+    display: inline-block;
+
+align-items: center;
+
+}
+
+.nav-links .fass p{
+text-decoration: underline;
+width: 100%;
+height: 3px;
+background-color: #0084ff;
+margin-top: 5px ;
+}
+.fa-house{
+    color: #0084ff;
+}
+  .nav-links a:hover {
+    
+     color: #0084ff;
+  }
+  .navbar .rss{
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    font-size: 25px;
+
+
+  }
+  .navbar .rss .rsss i{
+color: rgba(255, 255, 255, 0.199);
+background-color: rgba(255, 255, 255, 0);
+border-radius: 50%;
+
+  }
+
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+   height: auto;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+   right: 10px;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
+  .dropdown-content a {
+   color: white;
+   padding: 40px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  align-items: flex-end;
+height: 100px;
+ 
+   position: relative;
+  }
+ 
+  .dropdown-content a:hover {
+    background-color: #555;
+    transition: all 2s;
+   
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown .dropbtn {
+    background-color: black ;
+    color: cadetblue;
+    padding: 10px 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+margin-right: 10px;
+
+  }
+  .dropdown-content i {
+    font-size: 30px; /* تكبير الأيقونة */
+     /* لون الأيقونات */
+     flex-direction: column;
+   margin-left: 40px;
+}
+.dropdown-content h3{
+    margin-left: 30px;
+    font-size: 14px;
+}
+.messenger-icon {
+    color: #0084ff; /* لون أزرق فيس بوك */
+}
+
+/* أيقونة Chat */
+.chat-icon {
+    color: #27ae60; /* لون أخضر */
+}
+
+/* أيقونة Instagram */
+.instagram-icon {
+    color: #e1306c; /* لون وردي خاص بإنستاجرام */
+}
+
+/* أيقونة WhatsApp */
+.whatsapp-icon {
+    color: #25d366; /* لون أخضر خاص بواتساب */
+}
+
+.sec-1{
+   
+    display: flex;
+ width: 100%;
+height: 100px;
+
+}
+
+  
+
+.sec-1 .left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+height: 530px;
+right: 10px;
+position: fixed;
+}
+/* تنسيق الحاوية الرئيسية */
+.left {
+    width: 250px;
+    left: 20px;
+padding: 0 10px;
+height: 300px;
+
+}
+
+/* تنسيق القائمة */
+.left ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+   padding: 10px;
+
+}
+
+.left ul li {
+    display: flex;
+    align-items: center;
+   margin: 3px 15px;
+    height: 50px;
+}
+
+/* تنسيق الأيقونات */
+.left ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* تخصيص ألوان الأيقونات */
+.left ul li .fa-user-group {
+    color: #1E90FF; /* اللون الأزرق للأصدقاء */
+}
+
+.left ul li .fa-users {
+    color: #FF6347; /* اللون الأحمر للمجموعات */
+}
+
+.left ul li .fa-store {
+    color: #32CD32; /* اللون الأخضر للأسواق */
+}
+
+.left ul li .fa-clock {
+    color: #FFD700; /* اللون الذهبي للذكريات */
+}
+
+.left ul li .fa-bookmark {
+    color: #8A2BE2; /* اللون البنفسجي للمحفوظات */
+}
+
+.left ul li .fa-laptop {
+    color: #FF4500; /* اللون البرتقالي للفيديو */
+}
+
+.left ul li .fa-search {
+    color: #20B2AA; /* اللون الفيروزي للبحث */
+}
+
+.left ul li .fa-newspaper {
+    color: #F0E68C; /* اللون الأصفر الفاتح للتغذيات */
+}
+
+.left ul li .fa-calendar {
+    color: #DA70D6; /* اللون الأرجواني للفعاليات */
+}
+
+/* تنسيق الروابط */
+.left ul li a {
+    text-decoration: none;
+    color: #333; /* اللون الداكن للنصوص */
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* تغيير اللون عند التمرير على الروابط */
+.left ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* خلفية غامقة عند المرور */
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+/* تنسيق صورة الشخص */
+.left ul  img {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.left ul a{
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+.sec-1 .center{
+  
+    height: 100%;
+    width: 40%;
+   margin-left: 410px;
+    
+}
+.sec-1 .center .leader {
+    width: 100%;
+    height: 120px;
+   
+}
+.sec-1 .center .leader .top-div{
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    gap: 0 10px;
+}
+.sec-1 .center .leader .top-div img{
+    width: 60px;
+    height: 45px;
+    border-radius: 50%;  
+}
+.sec-1 .center .leader .top-div input{
+   
+    padding: 10px 40px 10px 10px; /* توفير مساحة للأيقونة */
+    font-size: 16px;
+    border-radius: 20px;
+    width:400px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(187, 182, 175);
+}
+.sec-1 .center .m p{
+text-decoration: underline;
+background-color: rgba(187, 182, 175, 0.678);
+width: 100%,;
+height: 2px; 
+
+} 
+.sec-1 .center .leader .ll{
+    display: flex;
+   justify-content: space-between;
+   
+   align-items: center;
+   
+}
+.sec-1 .center .icon-text {
+    display: flex;
+align-items: center;
+    
+}
+
+
+.sec-1 .center .icon-text a {
+    color: #333;
+    text-decoration: none;
+   font-size: 20px; 
+}
+.sec-1 .center .ll .icon-text:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+transition: all 1s;
+}
+.ii i.fas.fa-video-slash {
+    color: #ff6f61; /* لون أحمر دافئ لأيقونة الفيديو */
+}
+
+.ii i.fas.fa-image {
+    color: #4caf50; /* لون أخضر للأيقونة المتعلقة بالصورة */
+}
+
+.ii i.fas.fa-smile {
+    color: #ffeb3b; /* لون أصفر مشرق لأيقونة السمايل */
+}
+
+/* تنسيق الـ Slider */
+ .sec-1 .manosh{
+    width: 100%;
+    height: 30px;
+  
+   
+  
+}
+ .sec-1 .manosh img{
+    width: 100%;
+    height: 30px;
+}
+.sec-1 .first-div{
+display: flex;
+justify-content: space-between;
+ color: black;
+
+}
+.sec-1 .first-div div{
+    display: flex;
+gap: 0 13px;
+font-size: 30px;
+
+}
+.sec-1 .first-div div img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+   
+}
+.sec-1 .first-div a{
+    color: black;
+    text-decoration: none;
+}
+.sec-1 .first-div div h1{
+    font-size: 16px;
+    margin:10px 0 ;
+    
+}
+    
+.sec-1 .first-div div i{
+    opacity: 0.5;
+}
+.sec-1 .center-div{
+    width: 100%;
+    margin-top: 10px;
+ 
+}
+
+.sec-1 .center-div img{
+width: 100%;
+height: 600px;
+}
+.sec-1 .center .koko{
+    flex-direction: column;
+   
+}
+.sec-1 .center .koko .kapir{
+display: flex;
+justify-content: space-between;
+
+}
+.sec-1 .center .koko .kapir div{
+    display: flex;
+   
+   
+}
+.sec-1 .center .koko .kapir a{
+text-decoration: none;
+color: black;
+
+}
+.sec-1 .center .koko .kapir a i{
+    font-size: 16;
+    margin-left: 10px;
+
+}
+.sec-1 .center .koko .kapir .mmm{
+    gap: 0 10px;
+    
+}
+.sec-1 .center .koko .kapir .mmm h5{
+    font-size: 16px;
+}
+.sec-1 .center .finish-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   
+}
+.sec-1 .center .finish-div div{
+ justify-content: space-between;
+display: flex;
+
+}
+
+.sec-1 .center .finish-div div a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    
+}
+.sec-1 .center .finish-div:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 1s
+}
+.sec-1 .center .ppppp{
+    text-decoration:underline ;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+}
+
+
+.fas.fa-thumbs-up {
+    color: #007bff; /* الأزرق للإعجاب */
+  }
+
+  .fas.fa-laugh {
+    color: #f9c74f; /* الأصفر للضحك */
+  }
+
+  .fas.fa-heart {
+    color: #e0245e; /* الأحمر للقلب */
+  }
+  .finish-div .fa-comment {
+    color: #7f8c8d; /* اللون الرمادي للتعليق */
+  }
+
+  .finish-div .fa-whatsapp {
+    color: #25d366; /* اللون الأخضر لواتس أب */
+  }
+
+  .finish-div .fa-share {
+    color: #007bff; /* اللون الأخضر للمشاركة */
+  }
+.sec-1 .right{
+    height: auto;
+    width: 26%;
+    margin-left: 7px;
+   color: black;
+   position: fixed;
+right: 10px;
+ 
+}
+.sec-1 .right .imgg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.sec-1 .right .imgg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.sec-1 .right .text {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    height: 100px;
+    margin-right: 50px;
+}
+.sec-1 .right .text a{
+    text-decoration: none;
+    color: black;
+}
+.sec-1 .right .text .item{
+   margin-top: 10px;
+ 
+
+}
+.sec-1 .right .text .item p{
+    font-size: 12px;
+    
+}
+.sec-1 .right h1{
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+.sec-1 .right h1 span{
+    color: rgb(255, 102, 0);
+}
+.sec-1 .right .text .item h6{
+    letter-spacing: 2px;
+}
+.sec-1 .right .pp{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 3px;
+}
+.sec-1 .icons {
+    display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+.sec-1 .icons div i{
+   
+    margin: 0 5px;
+}
+.sec-1 .icons a{
+    text-decoration: none;
+    color: #333;
+}
+/* تنسيق الحاوية الأساسية لجميع الصور */
+/* حاوية الصور */
+.text-cont {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+   padding: 5px 0;
+   
+   
+  }
+  
+  .imgs-text {
+    display: flex;
+  margin: 10px 0;
+    gap: 0 30px;
+width: 100%;
+height: 50px;
+align-items: center;
+  }
+  
+  .img {
+    width: 100px; 
+    height:80%; 
+   
+    /* Adjust size of the images */
+  }
+  
+  .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+  }
+  .imgs-text .text{
+align-items: center;
+
+  }
+  .text h4 {
+   
+    font-size: 15px; /* Adjust font size */
+   
+   
+  }
+  .imgs-text:hover{
+    transition: all 1s;
+    background-color: #33333341;
+  }
